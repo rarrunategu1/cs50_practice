@@ -42,9 +42,10 @@ int main(void)
     }
     while(n <= 0);
 
-    //Print out that many bricks
+    //Print out that many rows
     for (int i = 0; i < n; i++)
     {
+        //print out that many columns
         for(int j = 0; j < n; j++)
     {
       printf("#");
