@@ -20,20 +20,23 @@ int expo(int num, int power)
     {
         return 1;
     }
-    return num * expo(num, power -1);
+    return num * expo(num, power - 1);
 
 }
 
 int exponr(int num, int power)
 {
     //if the power is 0 the lowest return would give you 1
-    int power = 1;
+    int answer = 1;
 
     //iterate through power
-    for(int i = 0; i < power; i++)
+    for (int i = 0; i < power; i++)
 
         //take power and multiply by num
         // 2*1 = 2*2 = 4*2 = 8 which is 2 to the 3rd power
-        power = power * num;
-        return power;
+
+    {
+        answer = answer * num;
+    }
+    return answer;
 }
